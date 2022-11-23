@@ -1,2 +1,2 @@
-# DeliDash ![Logo](assets/icon.png =250x250)
+# DeliDash
 A mobile app for deli and product reviewing.
