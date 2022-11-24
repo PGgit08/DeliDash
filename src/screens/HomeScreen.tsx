@@ -1,15 +1,12 @@
+import DeliPreviewList from 'components/List/DeliPreviewList';
 import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
 export default function HomeScreen() {
     return (
         <View style={styles.container}>
-            <Text>DeliDash Home Screen!</Text>
             <StatusBar style="auto" />
-            <Button
-                onPress = {() => alert('What\'s Up! Button Pressed.')}
-                title = "Press Me!"
-            />
+            <DeliPreviewList />
         </View>
     );
 }
