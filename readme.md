@@ -1,2 +1,2 @@
 # DeliDash
-DeliDash is the future of Deli browsing, reviewing, and P2P purchasing. It's made by students, for students
+DeliDash is the future of Deli browsing, reviewing, and P2P purchasing. It's made by students, for students.
