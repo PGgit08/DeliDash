@@ -1,2 +1,2 @@
 # DeliDash
-A mobile app for deli and product reviewing.
+DeliDash is the future of Deli browsing, reviewing, and P2P purchasing. It's made by students, for students
