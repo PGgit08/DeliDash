@@ -1,12 +1,18 @@
-import DeliPreviewList from 'components/List/DeliPreviewList';
+import BottomDrawer from 'components/Containers/BottomDrawer';
+import DeliPreviewList from 'components/Lists/DeliPreviewList';
 import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
+/**
+ * The home screen
+ */
 export default function HomeScreen() {
     return (
         <View style={styles.container}>
             <StatusBar style="auto" />
-            <DeliPreviewList />
+            <BottomDrawer>
+                <DeliPreviewList/>
+            </BottomDrawer>
         </View>
     );
 }

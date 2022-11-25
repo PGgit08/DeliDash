@@ -1,8 +1,12 @@
 import 'react-native-gesture-handler';
+import { SheetProvider } from 'react-native-actions-sheet';
 import { registerRootComponent } from 'expo';
 import { NavigationContainer } from '@react-navigation/native';
-import MainStack from 'navigations/main-navigation';
+import MainStack from 'navigations/MainStack';
 
+/**
+ * The main app component
+ */
 function App() {
 	return (
 		<NavigationContainer>

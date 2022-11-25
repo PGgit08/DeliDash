@@ -1,4 +1,4 @@
-import { View, SafeAreaView, FlatList, ListRenderItem, Text } from 'react-native';
+import { View, FlatList, ListRenderItem, Text, StyleSheet } from 'react-native';
 
 interface DeliPreviewInfo {
     name: string;
@@ -23,16 +23,27 @@ const PREVIEWDATA: DeliPreviewInfo[] = [
     MOCKDATA
 ];
 
-// a component for a deli preview
-function DeliPreview(deliPreivewInfo: DeliPreviewInfo) {
+
+/**
+ * A component for deli preview info
+ * @param props The deli preview info
+ */
+function DeliPreview(props: DeliPreviewInfo) {
     return (
-        <View>
-            <Text>{deliPreivewInfo.name}</Text>
+        <View style = {styles.deliPreviewBox}>
+            <Text style = {styles.deliPreviewText}>
+                Name: {props.name} {'\n'}
+                Distance: {props.distance} {'\n'}
+                Address: {props.address} {'\n'}
+                Rating: {props.rating}
+            </Text>
         </View>
     );
 }
 
-// a list of deli previews on the home page
+/**
+ * A list of deli preview info
+ */
 export default function DeliPreviewList() {
     const renderItem: ListRenderItem<DeliPreviewInfo> = ({ item }) => (
         <DeliPreview 
@@ -44,11 +55,24 @@ export default function DeliPreviewList() {
     );
 
     return (
-        <SafeAreaView>
+        <View>
             <FlatList 
                 data = {PREVIEWDATA}
                 renderItem = {renderItem}
             />
-        </SafeAreaView>
+        </View>
     );
 }
+
+const styles = StyleSheet.create({
+    deliPreviewBox: {
+        backgroundColor: '#141414',
+        padding: 20,
+        marginVertical: 8,
+        marginHorizontal: 16
+    },
+
+    deliPreviewText: {
+        color: 'white'
+    }
+});

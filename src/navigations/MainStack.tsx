@@ -3,7 +3,9 @@ import HomeScreen from "screens/HomeScreen";
 
 const Stack = createStackNavigator();
 
-// export the main stack navigation for the app
+/**
+ * The main navigation stack for the app
+ */
 export default function MainStack() {
     return (
         <Stack.Navigator>
