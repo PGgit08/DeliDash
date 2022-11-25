@@ -1,5 +1,6 @@
 import HomePreviewBox from 'components/Containers/HomePreviewBox';
 import DeliPreviewList from 'components/Lists/DeliPreviewList';
+import DeliStack from 'navigations/DeliStack';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
 /**
@@ -9,7 +10,7 @@ export default function HomeScreen() {
     return (
         <View style={styles.container}>
             <HomePreviewBox>
-                <DeliPreviewList/>
+                <DeliStack/>
             </HomePreviewBox>
         </View>
     );
