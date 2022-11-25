@@ -1,4 +1,5 @@
 import { View, FlatList, ListRenderItem, Text, StyleSheet } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 interface DeliPreviewInfo {
     name: string;
@@ -30,14 +31,14 @@ const PREVIEWDATA: DeliPreviewInfo[] = [
  */
 function DeliPreview(props: DeliPreviewInfo) {
     return (
-        <View style = {styles.deliPreviewBox}>
+        <TouchableOpacity style = {styles.deliPreviewBox} onPress = {() => alert('Pressed!')}>
             <Text style = {styles.deliPreviewText}>
                 Name: {props.name} {'\n'}
                 Distance: {props.distance} {'\n'}
                 Address: {props.address} {'\n'}
                 Rating: {props.rating}
             </Text>
-        </View>
+        </TouchableOpacity>
     );
 }
 

@@ -20,6 +20,7 @@ export default function HomePreviewBox(props: Props) {
 
 const styles = StyleSheet.create({
     box: {
+        backgroundColor: 'black',
         width: '98%',
         height: '43%',
         borderColor: 'white',
