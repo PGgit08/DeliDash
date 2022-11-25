@@ -60,7 +60,7 @@ export default function DeliPreviewList() {
                 data = {PREVIEWDATA}
                 renderItem = {renderItem}
             />
-        </View>
+        </View> 
     );
 }
 

@@ -1,6 +1,5 @@
-import BottomDrawer from 'components/Containers/BottomDrawer';
+import HomePreviewBox from 'components/Containers/HomePreviewBox';
 import DeliPreviewList from 'components/Lists/DeliPreviewList';
-import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
 /**
@@ -9,10 +8,9 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 export default function HomeScreen() {
     return (
         <View style={styles.container}>
-            <StatusBar style="auto" />
-            <BottomDrawer>
+            <HomePreviewBox>
                 <DeliPreviewList/>
-            </BottomDrawer>
+            </HomePreviewBox>
         </View>
     );
 }
@@ -20,8 +18,8 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: '#fff',
+		backgroundColor: 'black',
 		alignItems: 'center',
-		justifyContent: 'center',
+		justifyContent: 'flex-end'
 	},
 });
