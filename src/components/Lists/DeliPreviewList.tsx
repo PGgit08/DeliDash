@@ -8,6 +8,8 @@ interface DeliPreviewInfo {
     rating: number;
 }
 
+// i love u peter // me 2 ❤❤ lets keep this lmao // yea
+
 // mock datas for deli previews
 const MOCKDATA: DeliPreviewInfo = {
     name: "Terry's Market",
