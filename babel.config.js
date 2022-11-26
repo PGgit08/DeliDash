@@ -11,6 +11,7 @@ module.exports = function(api) {
 						navigations: "./src/navigations",
 						screens: "./src/screens",
 						assets: "./src/assets",
+						types: "./src/types",
 						src: "./src"
 					}
 				}

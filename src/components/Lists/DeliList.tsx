@@ -1,5 +1,5 @@
 import { View, FlatList, ListRenderItem } from 'react-native';
-import { DeliInfo } from 'src/types';
+import DeliInfo from 'types/DeliInfo';
 import DeliPreviewList from 'components/Previews/DeliPreviewList';
 
 // i love u peter // me 2 ❤❤ lets keep this lmao // yea

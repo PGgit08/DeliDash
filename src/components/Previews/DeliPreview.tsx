@@ -1,6 +1,6 @@
 import { Text, StyleSheet } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import { DeliInfo } from 'src/types';
+import DeliInfo from 'types/DeliInfo';
 
 /**
  * A preview for an individual deli
