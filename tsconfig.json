@@ -10,7 +10,7 @@
 			"navigations/*": ["src/navigations/*"],
 			"screens/*": ["src/screens/*"],
 			"assets/*": ["src/assets/*"],
-			"src/*": ["src"]
+			"src/*": ["src/*"]
 		}
 	}
 }

@@ -2,18 +2,13 @@ import { ReactNode } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 
 
-interface Props {
-    children?: ReactNode;
-}
-
-
 /**
  * A bottom container box for showing deli preview
  */
-export default function HomePreviewBox(props: Props) {
+export default function HomePreviewBox({ children }: { children?: ReactNode }) {
     return (
         <View style = {styles.box}>
-            { props.children }
+            { children }
         </View>
     );
 }

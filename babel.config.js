@@ -10,7 +10,8 @@ module.exports = function(api) {
 						components: "./src/components",
 						navigations: "./src/navigations",
 						screens: "./src/screens",
-						assets: "./src/assets"
+						assets: "./src/assets",
+						src: "./src"
 					}
 				}
 			]
