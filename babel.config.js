@@ -12,6 +12,7 @@ module.exports = function(api) {
 						screens: "./src/screens",
 						assets: "./src/assets",
 						types: "./src/types",
+						context: "./src/context",
 						src: "./src"
 					}
 				}
