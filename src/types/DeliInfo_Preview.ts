@@ -1,12 +1,14 @@
+import Deli_ID from "types/Deli_ID";
+
 /**
- * Basic info for a deli
+ * Preview info for a deli
  */
-export default interface DeliInfo {
+export default interface DeliInfo_Preview {
     name: string;
     distance: number;
     address: string;
     rating: number;
     sells: string[];
     images: string[];
-    id: number;
+    id: Deli_ID;
 }

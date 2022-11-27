@@ -1,11 +1,11 @@
 import { createContext } from 'react';
-import DeliInfo from 'types/DeliInfo';
+import DeliInfo from 'types/DeliInfo_Preview';
 import { ReactNode } from 'react';
 import { View } from 'react-native';
+import Deli_ID from 'types/Deli_ID';
 
 interface IAppCtx {
-    delis: DeliInfo[];
-    selectedDeli: DeliInfo;
+    selectedDeli: Deli_ID;
 }
 
 const AppCtx = createContext<IAppCtx | null>(null);

@@ -1,14 +1,14 @@
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
-import DeliInfo from 'types/DeliInfo';
+import DeliInfo_Preview from 'types/DeliInfo_Preview';
 
 /**
- * A list component for deli preview info
- * @param deliInfo The deli info
+ * A DeliList list component for deli preview info
+ * @param {DeliInfo_Preview} deliInfo The deli preview info
  */
-export default function DeliPreviewList({ deliInfo }: { deliInfo: DeliInfo }) {
-    const { id } = deliInfo;
+export default function DeliPreview_List({ deliInfo }: { deliInfo: DeliInfo_Preview }) {
+    const { deliID } = deliInfo.id;
     return (
-        <TouchableOpacity style = {styles.deliPreviewBox} onPress = {() => alert('Deli ' + id + ' Pressed!')}>
+        <TouchableOpacity style = {styles.deliPreviewBox} onPress = {() => alert('Deli ' + deliID + ' Pressed!')}>
             <Text style = {styles.deliPreviewText}>
                 Name: {deliInfo.name} {'\n'}
                 Distance: {deliInfo.distance} miles away {'\n'}

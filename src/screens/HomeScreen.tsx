@@ -1,29 +1,8 @@
 import HomePreviewBox from 'components/Containers/HomePreviewBox';
+import { StyleSheet, View } from 'react-native';
 import DeliList from 'components/Lists/DeliList';
-import DeliPreview from 'components/Previews/DeliPreview';
-import { Button, StyleSheet, Text, View } from 'react-native';
-import DeliInfo from 'types/DeliInfo';
+import { MOCK_DELILIST } from 'src/mock';
 
-
-// deli mock data for now
-const MOCK_DELIDATA: DeliInfo = {
-    name: "Terry's Market",
-    distance: 1,
-    address: "327 North End Avenue",
-    rating: 9.8,
-    sells: ["Medicine", "Snacks"],
-    images: ["img1", "img2"],
-    id: 0 // id is 0 for now, it gets changed later
-}
-
-// deli mock data for now
-const MOCK_DELILIST: DeliInfo[] = [
-    {...MOCK_DELIDATA, id: 1},
-    {...MOCK_DELIDATA, id: 2},
-    {...MOCK_DELIDATA, id: 3},
-    {...MOCK_DELIDATA, id: 4},
-    {...MOCK_DELIDATA, id: 5}
-]; 
 
 
 /**

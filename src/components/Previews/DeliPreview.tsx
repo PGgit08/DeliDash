@@ -1,12 +1,12 @@
 import { Text, StyleSheet } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import DeliInfo from 'types/DeliInfo';
+import DeliInfo_Preview from 'types/DeliInfo_Preview';
 
 /**
  * A preview for an individual deli
  * @param deliInfo The deli information
  */
-export default function DeliPreview({ deliInfo }: { deliInfo: DeliInfo }) {
+export default function DeliPreview({ deliInfo }: { deliInfo: DeliInfo_Preview }) {
     return (
         <TouchableOpacity style = {styles.deliPreviewBox}>
             <Text style = {styles.deliPreviewText}>
