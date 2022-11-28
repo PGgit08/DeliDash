@@ -20,6 +20,7 @@ export default function DeliList({ data }: { data: DeliInfo_Preview[] }) {
             <FlatList 
                 data = {data}
                 renderItem = {renderItem}
+                keyExtractor = {(item) => item.id.deliID}
             />
         </View> 
     );

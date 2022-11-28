@@ -13,6 +13,7 @@ export default function HomePreviewBox({ children }: { children?: ReactNode }) {
     );
 }
 
+// To change later
 const styles = StyleSheet.create({
     box: {
         backgroundColor: 'black',

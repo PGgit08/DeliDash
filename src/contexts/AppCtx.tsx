@@ -1,20 +1,26 @@
 import { createContext } from 'react';
-import DeliInfo from 'types/DeliInfo_Preview';
 import { ReactNode } from 'react';
-import { View } from 'react-native';
+import { MOCK_APPCTX } from 'src/mock';
 import Deli_ID from 'types/Deli_ID';
 
-interface IAppCtx {
+/**
+ * Defines Data in AppCtx
+ * @property {Deli_ID} selectedDeli - The Deli_ID of the current selected deli
+ */
+export interface IAppCtx {
     selectedDeli: Deli_ID;
 }
 
 const AppCtx = createContext<IAppCtx | null>(null);
 
+/**
+ * Provides children components with the AppCtx Context 
+ */
 function AppCtxProvider({ children }: { children?: ReactNode }) {
     return (
-        <View>
+        <AppCtx.Provider value = {MOCK_APPCTX}>
             { children }
-        </View>
+        </AppCtx.Provider>
     );
 }
 
