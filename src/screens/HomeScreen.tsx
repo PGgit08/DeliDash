@@ -1,13 +1,12 @@
 import HomePreviewBox from 'components/Containers/HomePreviewBox';
 import { StyleSheet, View } from 'react-native';
 import DeliList from 'components/Lists/DeliList';
-import { findDeliById, MOCK_DELILIST } from 'src/mock';
+import { MOCK_DELILIST } from 'src/mock';
 import DeliPreview from 'components/Previews/DeliPreview';
 
 
-
 /**
- * The Home screen
+ * The Home Screen
  */
 export default function HomeScreen() {
     return (

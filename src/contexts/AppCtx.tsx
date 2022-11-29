@@ -7,8 +7,8 @@ import Deli_ID from 'types/Deli_ID';
  * Defines Data in AppCtx
  * @property {Deli_ID} selectedDeli - The Deli_ID of the current selected deli
  */
-export interface IAppCtx {
-    selectedDeli: Deli_ID;
+interface IAppCtx {
+    selectedDeli: Deli_ID | null;
 }
 
 const AppCtx = createContext<IAppCtx | null>(null);
