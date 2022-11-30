@@ -1,6 +1,6 @@
 import DeliInfo_Preview from "types/DeliInfo_Preview";
 import Deli_ID from "types/Deli_ID";
-import { IAppCtx } from "./contexts/AppCtx";
+import { AppCtx_State } from "./contexts/AppCtx";
 
 /**
  * Mock deli preview data
@@ -18,7 +18,7 @@ export const MOCK_DELIDATA_PREVIEW: DeliInfo_Preview = {
 /**
  * Mock AppCtx Context Data
  */
-export const MOCK_APPCTX: IAppCtx = {
+export const MOCK_APPCTX_STATE: AppCtx_State = {
     selectedDeli: { deliID: '1' }
 }
 
